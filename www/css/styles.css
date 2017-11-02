@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'cwTeXHei';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+
 /*
 div{
     width: 100%;
@@ -11,9 +22,59 @@ div{
 */
 
 body{
-    font-family: georgia, serif;
+    font-family: 'cwTeXHei', georgia, serif;
 }
 
 h1, h2{
-    text-align: center
+    text-align: center;
+    font-family: 'cwTeXHei', georgia, serif;
+}
+h1{
+    font-size: 200%;
+}
+#content {
+    height: auto;
+    width: 400px;
+    display: block;
+    margin: 5em auto 0;
+    overflow: hidden;
+    position: relative;
+/*            border: 1px solid black;*/
+}
+#imgs {
+            float: left;
+            padding: 0;
+            margin: 0;
+            width: 1510px;
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-out;
+            /*apply a transform to kick in the hardware acceleration.  Without this, the first
+            time we add the transform you get odd rendering of the divs (half missing) */
+            transform: translate(0, 0);
+}
+#imgs img {
+            padding: 0;
+            margin: 0;
+            width: 500px;
+            height: 340px;
+            /*apply a transform to kick in the hardware acceleration.  Without this, the first
+            time we add the transform you get odd rendering of the divs (half missing) */
+            transform: translate(0, 0);
+}
+.hidegallery{
+    display: none;
+}
+.showgallery{
+    display: inline;
+}
+.ui-header, .ui-bar-inherit{
+    background-color: #A3190D;
+}
+.touch{
+    background-color: #F9ECFA;
+}
+h2{
+    margin: 0;
+    padding: 2em 0;
 }

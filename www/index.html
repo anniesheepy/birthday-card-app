@@ -9,7 +9,7 @@
     </head>
     <body>
         <div data-role="header" style="overflow:hidden;">
-            <h1>生日快樂</h1>
+            <h1>媽咪生日快樂</h1>
 
 <!--    <a href="#" data-icon="gear" class="ui-btn-right">Options</a>-->
 <!--
@@ -23,14 +23,27 @@
 -->
 </div><!-- /header -->
 
-            <div>
-                <h2>點下面的照片打開卡片</h2>
-                <img class="touch" style="max-width: 100%;" src="img/default.jpg">
-                
+            <div class="touch">
+                <h2 class="default">點下面的照片開始觀賞</h2>
+                <img class="default" style="width: 80%; display: block; margin: 0 auto; max-width: 100%; border: 5px solid #A3190D;" src="img/default.jpg">
+
+                <div id="content">
+                    <div id="imgs" class="hidegallery">
+                        <img style="max-width: 100%;" src="img/2017%E4%B8%89%E6%9C%88%E6%BA%AB%E5%93%A5%E8%8F%AF_1377.jpg"/>
+                        <img style="max-width: 100%;" src="img/2016.jpg"/>
+                        <img style="max-width: 100%;" src="img/2015.jpg"/>
+                    </div>
+                </div>
+                <audio controls autoplay class="hidegallery" id="song">
+                    <source src="media/annie_younidekuaile.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script src="js/jquery-1.11.3.min.js"></script>
 	   <script src="js/jquery.mobile-1.4.5.min.js"></script>
-	   <script src="js/main.js"></script>  
+	   <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/main.js"></script>  
     </body>
 </html>
