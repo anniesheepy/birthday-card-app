@@ -4,7 +4,8 @@ $(function(){
 	$("div.touch").on("tap",function(){
 	  $(".default").hide();
       $("#imgs").addClass("showgallery");
-      $("audio").addClass("showgallery");        
+      $("audio").addClass("showgallery"); 
+      $(".instrcut").addClass("show"); 
       obj.play(); 
 	});		
 });
@@ -23,7 +24,7 @@ $(function(){
 
         var IMG_WIDTH = 500;
         var currentImg = 0;
-        var maxImages = 3;
+        var maxImages = 12;
         var speed = 500;
         var imgs;
         var swipeOptions = {

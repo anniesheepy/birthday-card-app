@@ -25,7 +25,7 @@ body{
     font-family: 'cwTeXHei', georgia, serif;
 }
 
-h1, h2{
+h1, h2, h3{
     text-align: center;
     font-family: 'cwTeXHei', georgia, serif;
 }
@@ -34,9 +34,9 @@ h1{
 }
 #content {
     height: auto;
-    width: 400px;
+    width: 500px;
     display: block;
-    margin: 5em auto 0;
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
 /*            border: 1px solid black;*/
@@ -45,7 +45,7 @@ h1{
             float: left;
             padding: 0;
             margin: 0;
-            width: 1510px;
+            width: 6000px;
             transition-property: transform;
             transition-duration: 0.5s;
             transition-timing-function: ease-out;
@@ -57,16 +57,22 @@ h1{
             padding: 0;
             margin: 0;
             width: 500px;
-            height: 340px;
+            height: auto;
             /*apply a transform to kick in the hardware acceleration.  Without this, the first
             time we add the transform you get odd rendering of the divs (half missing) */
             transform: translate(0, 0);
+}
+.gallery{
+    float: left;
 }
 .hidegallery{
     display: none;
 }
 .showgallery{
     display: inline;
+}
+.show{
+    display: block;
 }
 .ui-header, .ui-bar-inherit{
     background-color: #A3190D;
@@ -77,4 +83,25 @@ h1{
 h2{
     margin: 0;
     padding: 2em 0;
+}
+h3{
+    padding: 1em 0;
+    margin: 0 auto;
+}
+h4{
+    margin: 0;
+    padding: 1em 10%;
+    font-family: 'cwTeXHei', georgia, serif;
+    font-size: 120%;
+    color: #A3190D;
+}
+audio{
+    width: 100%;
+}
+@media only screen and (max-width: 380px){ 
+    #content {
+       height: 500px;}
+    h4, h3{
+        font-size: 90%;
+    }
 }
