@@ -25,7 +25,7 @@ body{
     font-family: 'cwTeXHei', georgia, serif;
 }
 
-h1, h2, h3{
+h1, h2, h3, button{
     text-align: center;
     font-family: 'cwTeXHei', georgia, serif;
 }
@@ -103,5 +103,8 @@ audio{
        height: 500px;}
     h4, h3{
         font-size: 90%;
+    }
+    h3{
+        padding: 1.5em 0 1em;
     }
 }
