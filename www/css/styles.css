@@ -35,7 +35,6 @@ h1{
 #content {
     height: auto;
     width: 500px;
-    display: block;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -69,16 +68,18 @@ h1{
     display: none;
 }
 .showgallery{
-    display: inline;
-}
-.show{
     display: block;
 }
 .ui-header, .ui-bar-inherit{
     background-color: #A3190D;
 }
 .touch{
-    background-color: #F9ECFA;
+    min-height: 580px;
+    background: rgb(226,226,226); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(226,226,226,1) 1%, rgba(209,209,209,1) 28%, rgba(254,254,254,1) 52%, rgba(254,254,254,1) 52%, rgba(209,209,209,1) 76%, rgba(219,219,219,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(226,226,226,1) 1%,rgba(209,209,209,1) 28%,rgba(254,254,254,1) 52%,rgba(254,254,254,1) 52%,rgba(209,209,209,1) 76%,rgba(219,219,219,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(226,226,226,1) 1%,rgba(209,209,209,1) 28%,rgba(254,254,254,1) 52%,rgba(254,254,254,1) 52%,rgba(209,209,209,1) 76%,rgba(219,219,219,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#dbdbdb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 h2{
     margin: 0;
@@ -90,21 +91,62 @@ h3{
 }
 h4{
     margin: 0;
-    padding: 1em 10%;
+    padding: 0 0 0 0.5%;
     font-family: 'cwTeXHei', georgia, serif;
     font-size: 120%;
-    color: #A3190D;
+    color: #FFF;
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    text-shadow: 1px 0px 3px #111;
 }
 audio{
     width: 100%;
+    margin-top: 3em;
 }
 @media only screen and (max-width: 380px){ 
-    #content {
-       height: 500px;}
-    h4, h3{
-        font-size: 90%;
+     #content{
+        height: 500px;
+    }
+    h4{
+        font-size: 150%;
     }
     h3{
         padding: 1.5em 0 1em;
+        font-size: 90%;
+    }
+    audio{
+        margin-top: 2em;
+    }
+}
+@media only screen and (min-width: 768px){ 
+    .touch{
+        min-height: 980px;
+    }
+    h4{
+      font-size: 150%;    
+    }
+    audio{
+        margin-top: 15em;
+    }
+    .gallery{
+        margin-bottom: 3em;
+    }
+    #imgs{
+        margin:8em 0 0;
+    }
+}
+@media only screen and (min-width: 1024px){ 
+    .touch{
+        min-height: 1330px;
+    }
+    audio{
+        margin-top: 14em;
+    }
+    #content{
+        width: 1000px;
+    }
+    .gallery{
+        margin-bottom: 25em;
     }
 }

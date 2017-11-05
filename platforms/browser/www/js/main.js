@@ -3,9 +3,10 @@ var obj = document.getElementById("song");
 $(function(){	
 	$("div.touch").on("tap",function(){
 	  $(".default").hide();
+      $("#content").addClass("showgallery");
       $("#imgs").addClass("showgallery");
       $("audio").addClass("showgallery"); 
-      $(".instrcut").addClass("show"); 
+      $(".instrcut").addClass("showgallery"); 
       obj.play(); 
 	});		
 });
