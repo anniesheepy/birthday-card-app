@@ -7,6 +7,11 @@
     <author email="anniesheepy@gmail.com" href="http://anniekwhsu.com">
         Annie KW Hsu
     </author>
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="50000" />
     <platform name="ios">
 				<!-- ICONS -->
 				<!-- iPhone 6 / 6+ -->
@@ -53,7 +58,7 @@
 				<icon src="icons/android/xxhdpi.png" platform="android" qualifier="xxhdpi" />
 				<icon src="icons/android/xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
 
-                				<!-- SPLASH SCREENS -->
+                <!-- SPLASH SCREENS -->
 				<splash src="splash/android/ldpi.png" platform="android" qualifier="ldpi" density="port-ldpi"/>
 				<splash src="splash/android/mdpi.png" platform="android" qualifier="mdpi" density="port-mdpi"/>
 				<splash src="splash/android/hdpi.png" platform="android" qualifier="hdpi" density="port-hdpi"/>
@@ -65,7 +70,6 @@
 		<!-- DEFAULT ICON + SPLASH -->
 		<icon src="icon.png" />
         <splash src="splash.png" />
-        <preference name="SplashScreenDelay" value="10000" />
 		
     <content src="index.html" />
     <access origin="*" />
