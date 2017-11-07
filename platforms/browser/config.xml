@@ -4,10 +4,17 @@
     <description>
         Happy Birthday Mommy!
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="anniesheepy@gmail.com" href="http://anniekwhsu.com">
+        Annie KW Hsu
     </author>
     <icon src="icon.png" />
+    <splash src="splash.png" />
     <content src="index.html" />
     <access origin="*" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreen" value="/images/browser/splashscreen.jpg" />
+    <preference name="SplashScreenBackgroundColor" value="green" />
+    <preference name="ShowSplashScreen" value="false" />
+    <preference name="SplashScreenWidth" value="600" />
+    <preference name="SplashScreenHeight" value="300" />
 </widget>
